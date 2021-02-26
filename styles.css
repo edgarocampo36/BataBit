@@ -158,7 +158,7 @@ main {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
-  height: 300px;
+  height: 280px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
@@ -260,4 +260,114 @@ main {
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: var(--warm-black);
+}
+
+/* Estilos de seccion de beneficios */
+
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 16px;
+  background-color: var(--black);
+}
+
+.product-detail__batata-logo {
+  width: 40px;
+  height: 25px;
+  background: url("./assets/img/batata.svg") center/cover no-repeat;
+  position: absolute;
+  top: calc(0% - 12.5px);
+  left: calc(50% - 20px);
+}
+
+.product-detail__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.product-detail__title h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.product-detail__title p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 32px;
+  color: #808080;
+}
+
+.product-cards__container {
+}
+
+.product-detail__card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--warm-black);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+}
+
+.product-card__icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: center/cover no-repeat;
+}
+.clock {
+  background-image: url("./assets/icons/clock1.svg");
+}
+.ojo {
+  background-image: url("./assets/icons/eye1.svg");
+}
+.dolar {
+  background-image: url("./assets/icons/dollar1.svg");
+}
+.check {
+  background-image: url("./assets/icons/checkCircle1.svg");
+}
+
+
+.product-card__title {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--white);
+}
+
+.product-card__body {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background: url("./assets/img/bitcoinbaby2x.png") center/cover no-repeat;
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+  color: var(--white);
+  text-align: center;
 }
