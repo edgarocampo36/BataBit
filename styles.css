@@ -153,16 +153,18 @@ main {
   margin-bottom: 24px;
 }
 
-.main-currency-table {
+.main-currency-table,
+.main-comission-table {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
-  height: 240px;
+  height: 300px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
 
-.main-currency-table__title {
+.main-currency-table__title,
+.main-comission-table__title {
   width: 70%;
   min-width: 173px;
   margin-bottom: 12px;
@@ -172,7 +174,12 @@ main {
   color: var(--bitcoin-orange);
 }
 
-.main-currency-table-container {
+.main-comission-table__title {
+  color: var(--secondary-blue);
+}
+
+.main-currency-table-container,
+.main-comission-table-container {
   width: 90%;
   min-width: 230px;
   max-width: 300px;
@@ -180,12 +187,14 @@ main {
   margin: 0 auto;
 }
 
-.main-currency-table-container table {
+.main-currency-table-container table,
+.main-comission-table-container table {
   width: 100%;
   height: 100%;
 }
 
-.main-currency-table-container td {
+.main-currency-table-container td,
+.main-comission-table-container td {
   width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
@@ -194,17 +203,61 @@ main {
   background-color: var(--white);
 }
 
-.main-currency-table__date {
+.main-currency-table-container .table--top-left,
+.main-comission-table-container .table--top-left {
+  border-radius: 15px 0 0 0;
+}
+.main-currency-table-container .table--top-right,
+.main-comission-table-container .table--top-right {
+  border-radius: 0 15px 0 0;
+}
+.main-currency-table-container .table--bottom-left,
+.main-comission-table-container .table--bottom-left {
+  border-radius: 0 0 0 15px;
+}
+.main-currency-table-container .table--bottom-right,
+.main-comission-table-container .table--bottom-right {
+  border-radius: 0 0 15px 0;
+}
+
+.main-currency-table-container .table--rigth,
+.main-comission-table-container .table--rigth {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #757575;
+}
+
+.main-currency-table-container .down,
+.main-currency-table-container .up {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background: url("./assets/icons/downVector.svg") center/cover no-repeat;
+}
+.main-currency-table-container .up {
+  background: url("./assets/icons/upVector.svg") center/cover no-repeat;
+}
+
+.main-currency-table__date,
+.main-comission-table__date {
   width: 70%;
   min-width: 173px;
   padding: 8px;
   background-color: var(--soft-orange);
   border-radius: 8px;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
-.main-currency-table__date p {
-  font-size: 12px;
-  line-height: 15px;
+.main-comission-table__date {
+  background-color: var(--soft-blue);
+}
+
+.main-currency-table__date p,
+.main-comission-table__date p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   color: var(--warm-black);
 }
