@@ -1,0 +1,24 @@
+.main-exchange-table-container {
+  justify-content: center;
+  width: 930px;
+  margin: 0 auto;
+}
+
+.main-currency-table,
+.main-comission-table {
+  width: 50%;
+  min-width: 320px;
+}
+
+.product-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 930px;
+  margin: 0 auto;
+}
+
+.plans-container__slider {
+  justify-content: center;
+}
+
+

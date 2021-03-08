@@ -154,10 +154,17 @@ main {
   margin-bottom: 24px;
 }
 
+.main-exchange-table-container {
+  display: flex;
+  height: auto;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+
 .main-currency-table,
 .main-comission-table {
-  width: 70%;
-  min-width: 235px;
+  min-width: 100%;
   max-width: 500px;
   height: 280px;
   margin: 0 auto;
@@ -181,11 +188,9 @@ main {
 
 .main-currency-table-container,
 .main-comission-table-container {
-  width: 90%;
   min-width: 230px;
-  max-width: 300px;
   height: 160px;
-  margin: 0 auto;
+  margin: 0 30px;
 }
 
 .main-currency-table-container table,
